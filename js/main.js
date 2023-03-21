@@ -13,7 +13,7 @@ getRandomPositiveInteger(0,1);
 
 //Генерация случайного числа с плавающей точкой из диапазона от a до b с n знаков после запятой
 
-function getRandomPositiveInteger ( a, b = 1 , n ) {
+function getRandomPositiveFloat ( a, b = 1 , n ) {
   if (a === undefined) {
     throw new Error ('Первый параметр должен быть число');
   }
@@ -23,4 +23,4 @@ function getRandomPositiveInteger ( a, b = 1 , n ) {
   return +result.toFixed(n);
 }
 
-console.log(getRandomPositiveInteger ( 0, 5 ,3 ));
+getRandomPositiveFloat ( 0, 5 ,3 );
